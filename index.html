@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TB MCQ Exam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🦠 Tuberculosis MCQ Exam</h1>
+    
+    <div class="section-nav">
+      <button onclick="goToSection(1)">Intro</button>
+      <button onclick="goToSection(2)">Bacteriology</button>
+      <button onclick="goToSection(3)">Virulence</button>
+      <button onclick="goToSection(4)">Clinical</button>
+      <button onclick="goToSection(5)">Diagnosis</button>
+      <button onclick="goToSection(6)">Treatment</button>
+      <button onclick="goToSection(7)">Co-infection</button>
+      <button onclick="goToSection(8)">M. leprae</button>
+      <button onclick="goToSection(9)">NTM</button>
+    </div>
+
+    <div class="card">
+      <h3 id="question"></h3>
+      <div id="options"></div>
+      <p id="feedback"></p>
+      <p id="score"></p>
+      <div id="endSummary" style="display:none;">
+        <h3>🎉 Exam Finished!</h3>
+        <p id="finalScore"></p>
+        <h4>Wrong Questions:</h4>
+        <ul id="wrongList"></ul>
+        <button onclick="retryWrong()">Retry Wrong Questions</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
